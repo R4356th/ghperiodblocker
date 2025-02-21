@@ -1,0 +1,17 @@
+{
+    "name": "Block GitHub Period Shortcut",
+    "version": "1.0.0",
+    "description": "Blocks inputting '.' on GitHub blob and tree pages to prevent accidentally opening the github.dev web editor.",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://github.com/*"
+        ],
+        "js": ["blocker.js"],
+        "run_at": "document_start"
+      }
+    ],
+    "permissions": [],
+    "author": "Radman Siddiki",
+    "manifest_version": 3
+}
